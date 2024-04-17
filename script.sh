@@ -1,11 +1,6 @@
 #!/bin/bash
-java -version #verifica versao atual do java
-if [ $? = 0 ]; #se retorno for igual a 0
-then #entao,
-echo “Cliente possui java instalado!” #print no terminal
-else #se nao,
-echo “Cliente não possui java instalado!” #print no terminal
-fi #fecha o if
+
+sudo apt upgrade && sudo apt update -y
 
 java -version #verifica versao atual do java
 if [ $? = 0 ]; #se retorno for igual a 0
